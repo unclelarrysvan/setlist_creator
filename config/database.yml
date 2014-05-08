@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: setlist_development
+  username: skinny
+  password: im1coolguy
+
+test:
+  <<: *default
+  database: setlist_test
+  username: skinny
+  password: im1coolguy
+
+production:
+  <<: *default
+  database: db/production.sqlite3
