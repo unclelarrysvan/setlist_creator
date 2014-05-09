@@ -35,7 +35,7 @@ end
 group :development, :test do
   # Use debugger
   gem 'debugger'
-  gem 'spring'
+  #gem 'spring'
   gem "factory_girl_rails"
   gem "rspec-rails"
   gem "shoulda"
