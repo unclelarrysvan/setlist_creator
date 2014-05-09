@@ -10,8 +10,8 @@ class Song < ActiveRecord::Base
       seconds += song.seconds
     end
     added_minutes = seconds / 60
-    seconds = seconds % 60
     minutes += added_minutes
+    seconds = seconds % 60
     if seconds < 10
       seconds = "0#{seconds}"
     end
